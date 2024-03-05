@@ -6,8 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.app.feastfinder.R
+import com.app.feastfinder.databinding.FragmentProfileBinding
+import com.denzcoskun.imageslider.models.SlideModel
 
 class ProfileFragment : Fragment() {
+    private lateinit var binding: FragmentProfileBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -18,9 +21,7 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false)
-    }
-
-    companion object {
+        binding = FragmentProfileBinding.inflate(inflater,container,false)
+        return binding.root
     }
 }

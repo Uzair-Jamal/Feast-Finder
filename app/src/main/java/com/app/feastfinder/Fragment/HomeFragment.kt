@@ -6,7 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager.HORIZONTAL
+import androidx.recyclerview.widget.LinearLayoutManager.VERTICAL
 import com.app.feastfinder.R
+import com.app.feastfinder.adapter.PopularAdapter
 import com.app.feastfinder.databinding.FragmentHomeBinding
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
@@ -52,8 +56,18 @@ class HomeFragment : Fragment() {
                 val itemMessage = "Selected Image: $position"
                 Toast.makeText(requireContext(),itemMessage,Toast.LENGTH_LONG).show()
             }
-
         })
+
+        val popularFoodName = listOf("Burger","Sandwich","Biryani","Nihari","Ice Cream")
+        val popularFoodImage = listOf(R.drawable.menu_photo,R.drawable.menu_photo_1,R.drawable.menu_photo_2,R.drawable.menu5,R.drawable.menu4)
+        val popularFoodPrice = listOf("$5","$7","$17","$11","$2")
+
+        val popularAdapter = PopularAdapter(popularFoodName,popularFoodImage,popularFoodPrice)
+        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext(), VERTICAL,false)
+        binding.recyclerView.adapter = popularAdapter
+
+
+
     }
 
 }

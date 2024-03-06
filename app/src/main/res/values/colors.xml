@@ -4,4 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="app_color">#BE1515</color>
     <color name="app_name">#cf2f2f</color>
+    <color name="start_color">#E85353</color>
+    <color name="end_color">#BE1515</color>
 </resources>

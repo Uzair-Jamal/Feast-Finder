@@ -5,20 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager.VERTICAL
 import com.app.feastfinder.R
+import com.app.feastfinder.adapter.CartAdapter
+import com.app.feastfinder.databinding.FragmentCartBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [CartFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class CartFragment : Fragment() {
-
+    private lateinit var binding: FragmentCartBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -29,10 +23,16 @@ class CartFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cart, container, false)
+        binding = FragmentCartBinding.inflate(inflater,container,false)
+
+        val cartItem = listOf("Burger","Sandwich","Biryani","Nihari","Ice Cream")
+        val cartPrice = listOf("$5","$7","$17","$11","$2")
+        val cartImage = listOf(R.drawable.menu_photo,R.drawable.menu_photo_1,R.drawable.menu_photo_2,R.drawable.menu4,R.drawable.menu5)
+
+        val adapter = CartAdapter(ArrayList(cartItem),ArrayList(cartImage),ArrayList(cartPrice))
+        binding.cartRecyclerView.layoutManager = LinearLayoutManager(requireContext(),VERTICAL,false)
+        binding.cartRecyclerView.adapter = adapter
+        return binding.root
     }
 
-    companion object {
-
-    }
 }

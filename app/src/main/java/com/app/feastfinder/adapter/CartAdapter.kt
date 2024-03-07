@@ -33,13 +33,13 @@ class CartAdapter(private val cartItems: MutableList<String>, private val cartIt
             binding.cartQuantity.text = quantity.toString()
 
             binding.plusBtn.setOnClickListener {
-                if(itemQuantities[position] > 1){
+                if(itemQuantities[position] in 0..9){
                     itemQuantities[position]++
                     binding.cartQuantity.text = itemQuantities[position].toString()
                 }
             }
             binding.minusBtn.setOnClickListener {
-                if(itemQuantities[position]<=10){
+                if(itemQuantities[position] in 1..10){
                     itemQuantities[position]--
                     binding.cartQuantity.text = itemQuantities[position].toString()
                 }

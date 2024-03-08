@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager.HORIZONTAL
 import androidx.recyclerview.widget.LinearLayoutManager.VERTICAL
+import com.app.feastfinder.MenuBottomSheetFragment
 import com.app.feastfinder.R
 import com.app.feastfinder.adapter.PopularAdapter
 import com.app.feastfinder.databinding.FragmentHomeBinding
@@ -29,6 +30,12 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(inflater,container,false)
+
+        binding.viewAll.setOnClickListener {
+            val bottomSheetDialog = MenuBottomSheetFragment()
+            bottomSheetDialog.show(parentFragmentManager,"Cart")
+        }
+
         return binding.root
 
 
@@ -65,8 +72,6 @@ class HomeFragment : Fragment() {
         val popularAdapter = PopularAdapter(popularFoodName,popularFoodImage,popularFoodPrice)
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext(), VERTICAL,false)
         binding.recyclerView.adapter = popularAdapter
-
-
 
     }
 

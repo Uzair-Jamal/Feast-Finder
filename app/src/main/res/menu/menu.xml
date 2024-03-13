@@ -3,17 +3,17 @@
     <item
         android:title="Home"
         android:id="@+id/homeFragment"
-        android:icon="@drawable/home_04"
+        android:icon="@drawable/home"
         />
     <item
         android:title="Cart"
         android:id="@+id/cartFragment"
-        android:icon="@drawable/shopping_cart_01"
+        android:icon="@drawable/cart"
         />
     <item
         android:title="Search"
         android:id="@+id/searchFragment"
-        android:icon="@drawable/search_refraction"
+        android:icon="@drawable/search"
         />
     <item
         android:title="History"
@@ -23,6 +23,6 @@
     <item
         android:title="Profile"
         android:id="@+id/profileFragment"
-        android:icon="@drawable/user_02"
+        android:icon="@drawable/user"
         />
 </menu>

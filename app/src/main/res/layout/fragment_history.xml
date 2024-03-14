@@ -45,7 +45,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:src="@drawable/menu2" />
+                tools:srcCompat="@drawable/menu6" />
 
             <TextView
                 android:id="@+id/history_foodName"
@@ -101,5 +101,6 @@
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/previous_text" />
+        app:layout_constraintTop_toBottomOf="@+id/previous_text"
+        tools:listitem="@layout/buy_again_item"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

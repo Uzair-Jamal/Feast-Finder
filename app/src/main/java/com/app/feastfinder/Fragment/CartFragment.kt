@@ -1,5 +1,6 @@
 package com.app.feastfinder.Fragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager.VERTICAL
+import com.app.feastfinder.PayOut
 import com.app.feastfinder.R
 import com.app.feastfinder.adapter.CartAdapter
 import com.app.feastfinder.databinding.FragmentCartBinding
@@ -32,6 +34,9 @@ class CartFragment : Fragment() {
         val adapter = CartAdapter(ArrayList(cartItem),ArrayList(cartImage),ArrayList(cartPrice))
         binding.cartRecyclerView.layoutManager = LinearLayoutManager(requireContext(),VERTICAL,false)
         binding.cartRecyclerView.adapter = adapter
+        binding.proceedBtn.setOnClickListener {
+            startActivity(Intent(requireContext(),PayOut::class.java))
+        }
         return binding.root
     }
 

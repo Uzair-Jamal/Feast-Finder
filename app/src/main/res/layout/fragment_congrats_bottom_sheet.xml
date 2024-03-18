@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.CongratsBottomSheet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Congrats!\n Your Order has been Placed"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/congratulation" />
+        
+        
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/gohomeshape"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:id="@+id/go_back_home"
+            android:layout_width="157dp"
+            android:layout_height="57dp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginTop="32dp"
+            android:text="Go Home"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</FrameLayout>

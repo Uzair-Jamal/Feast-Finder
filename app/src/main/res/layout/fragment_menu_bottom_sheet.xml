@@ -19,7 +19,7 @@
 
     <TextView
         android:gravity="center"
-        android:text="Cart"
+        android:text="Menu"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/poppins_regular"
         android:textSize="24sp"

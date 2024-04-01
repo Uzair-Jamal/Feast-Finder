@@ -56,19 +56,4 @@ class CartAdapter(private val cartItems: MutableList<String>, private val cartIt
         }
 
     }
-
-    private fun deleteCart() {
-        TODO("Not yet implemented")
-    }
-
-    private fun decreaseCart() {
-        TODO("Not yet implemented")
-    }
-
-    private fun increaseCart(position:Int) {
-        if(itemQuantities[position]>1){
-            itemQuantities[position]++
-
-        }
-    }
 }

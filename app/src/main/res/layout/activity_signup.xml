@@ -156,7 +156,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/signupBtn"
         android:layout_width="157dp"
-        android:layout_height="50dp"
+        android:layout_height="57dp"
         android:text="Create Account"
         android:textSize="16sp"
         android:textAllCaps="false"

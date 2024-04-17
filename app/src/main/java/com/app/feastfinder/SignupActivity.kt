@@ -66,7 +66,6 @@ class SignupActivity : AppCompatActivity() {
 
         }
     }
-
     private fun saveUserData() {
         userName = binding.name.text.toString()
         email = binding.email.text.toString()
@@ -74,5 +73,6 @@ class SignupActivity : AppCompatActivity() {
 
         val user = UserModel(userName,email,password)
         val userId = FirebaseAuth.getInstance().currentUser!!.uid
+        database.child("user").child(userId).setValue(user)
     }
 }

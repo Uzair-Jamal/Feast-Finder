@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "546605993361",
+    "project_id": "feast-finder-e2cec",
+    "storage_bucket": "feast-finder-e2cec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546605993361:android:52238e4d8150e6e002de30",
+        "android_client_info": {
+          "package_name": "com.app.feastfinder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1RZa8NkX4nY3rZfizhz-Avhg6cYWLBck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

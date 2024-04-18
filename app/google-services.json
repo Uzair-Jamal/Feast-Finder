@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "546605993361",
+    "firebase_url": "https://feast-finder-e2cec-default-rtdb.firebaseio.com",
+    "project_id": "feast-finder-e2cec",
+    "storage_bucket": "feast-finder-e2cec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546605993361:android:3468a50a012ece6f02de30",
+        "android_client_info": {
+          "package_name": "com.app.adminpanelfeastfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546605993361-keb9aup53pggbh23v51vq1i6vmva281p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.adminpanelfeastfinder",
+            "certificate_hash": "c74ed68a962a18694de0d37ec8a47d504012672d"
+          }
+        },
+        {
+          "client_id": "546605993361-pgusm2pj4f2nhrmi6q1j1rbscor2h08u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1RZa8NkX4nY3rZfizhz-Avhg6cYWLBck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546605993361-pgusm2pj4f2nhrmi6q1j1rbscor2h08u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546605993361:android:52238e4d8150e6e002de30",
+        "android_client_info": {
+          "package_name": "com.app.feastfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546605993361-6itapo057iuj94baec179f0rmo64lnt5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.feastfinder",
+            "certificate_hash": "2e09cdb103d1b0011ee02aa309e846a05ef06f19"
+          }
+        },
+        {
+          "client_id": "546605993361-pgusm2pj4f2nhrmi6q1j1rbscor2h08u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1RZa8NkX4nY3rZfizhz-Avhg6cYWLBck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546605993361-pgusm2pj4f2nhrmi6q1j1rbscor2h08u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

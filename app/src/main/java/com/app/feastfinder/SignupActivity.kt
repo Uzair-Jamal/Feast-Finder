@@ -39,11 +39,13 @@ class SignupActivity : AppCompatActivity() {
 
         // Initialize Firebase Database
         database = Firebase.database.reference
+        
 
         binding.signupBtn.setOnClickListener {
             userName = binding.name.text.toString()
             email = binding.email.text.toString()
             password = binding.password.text.toString()
+
             if (userName.isEmpty() || email.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Please Fill All the details", Toast.LENGTH_LONG).show()
             } else {
